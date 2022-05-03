@@ -25,7 +25,7 @@ struct TransferView: View {
             
             Color.BackgroundColor.ignoresSafeArea()
             
-            VStack {
+            VStack(spacing:0) {
                 ZStack {
                         Rectangle()
                             .foregroundColor(.MainColor)

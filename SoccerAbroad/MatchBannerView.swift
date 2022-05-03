@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MatchBannerView: View {
-//    var LiveArray: [String] = ["Man City : Liverpool", "Chelsea : Arsenal", "Tottenham : Man United", "West Ham : Wolves", "Newcastle : Leicester", "Brighton : Brentford", "Southampton : Crystal Palace", "Aston Villa : Leeds"]
+    var LiveArray: [String] = ["Man City : Liverpool", "Chelsea : Arsenal", "Tottenham : Man United", "West Ham : Wolves", "Newcastle : Leicester", "Brighton : Brentford", "Southampton : Crystal Palace", "Aston Villa : Leeds"]
     
     var body: some View {
         TabView {
@@ -17,16 +17,22 @@ struct MatchBannerView: View {
                     Image("Live\(i)")
                         .resizable()
                         .frame(height: 240)
+                 
+                    LinearGradient(gradient: Gradient(colors: [Color.clear, Color.black]), startPoint: .top, endPoint: .bottom)
+                        .frame(width: 390, height: 110)
                     
-                    LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.000001), Color.black]), startPoint: .top, endPoint: .bottom)
-                        .frame(width: 390, height: 240)
-                    
-//                    VStack {
-//                        Text(LiveArray[i-1])
-//                            .foregroundColor(.BackgroundColor)
-//                            .fontWeight(.bold)
-//                    }
-//                    .padding()
+                    VStack {
+                        HStack {
+                            Text(LiveArray[i-1])
+                                .foregroundColor(.BackgroundColor)
+                                .fontWeight(.bold)
+                            
+                            Spacer()
+                            
+                        }
+                        .padding(.horizontal, 30)
+                    }
+                    .padding(.vertical, 35)
 
                 }
             }
@@ -40,3 +46,4 @@ struct MatchBannerView_Previews: PreviewProvider {
         MatchBannerView()
     }
 }
+

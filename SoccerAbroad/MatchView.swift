@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct MatchView: View {
+    
+    var matchTitle: [String] = ["Premier League", "LaLiga", "BUNDESLIGA", "SERIE A"]
+    
     var body: some View {
-        VStack {
+        VStack(spacing: 30) {
             Image("MainLogo")
                 .resizable()
                 .scaledToFit()  // 이미지 비율 고정
                 .frame(width: 130)
             
             ScrollView {
-                VStack {
+                
+                VStack(spacing: 20) {
                     ZStack {
                         Rectangle()
                             .frame(height: 100)
@@ -27,16 +31,18 @@ struct MatchView: View {
                         Text("Live")
                             .fontWeight(.bold)
                             .font(.title2)
-                        
                         Spacer()
-                        
                     }
                     .padding()
-                    
+                }
+  
                     MatchBannerView()
-                    
+                       .frame(width: .infinity, height: 240, alignment: .center)
+
+                
+                ForEach(matchTitle, id: \.self) { i in
                     HStack {
-                        Text("Premier League")
+                        Text("\(i)")
                             .fontWeight(.bold)
                             .font(.title2)
                         
@@ -45,8 +51,7 @@ struct MatchView: View {
                     }
                     .padding()
                     
-                    PremierMainView()
-                    
+                    LeagueViews()
                     
                 }
             }
@@ -54,6 +59,24 @@ struct MatchView: View {
         }
         .padding()
         
+    }
+}
+
+struct LeagueViews: View {
+    
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            LazyHStack(spacing: 20) {
+                ForEach(1...10, id: \.self) { i in
+                    Image("Premier\(i)")
+                        .resizable()
+                        .frame(width: 175, height: 130)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                    
+                }
+            }
+            .frame(height: 130)
+        }
     }
 }
 
