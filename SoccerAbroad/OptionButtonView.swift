@@ -17,11 +17,6 @@ struct OptionButtonView: View {
         }) {
             Image(systemName: tapOption ? "square" : "checkmark.square.fill")
                 .foregroundColor(.TabBarColor)
-            
-//            Rectangle()
-//                .foregroundColor(Color.black)
-//                .frame(width: 20, height: 20)
-//                .overlay(Rectangle().frame(width: 18, height: 18).foregroundColor(tapOption == true ? Color.black : Color.white))
 
         }
     }

@@ -13,5 +13,6 @@ extension Color {
     static let FontColor = Color("FontColor")
     static let MainColor = Color("MainColor")
     static let TabBarColor = Color("TabBarColor")
+    static let PremierLeagueColor = Color("PremierLeagueColor")
     
 }

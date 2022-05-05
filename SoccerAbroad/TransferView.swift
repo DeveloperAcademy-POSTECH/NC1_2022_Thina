@@ -25,7 +25,7 @@ struct TransferView: View {
             
             Color.BackgroundColor.ignoresSafeArea()
             
-            VStack(spacing:0) {
+            VStack(spacing: 2) {
                 ZStack {
                         Rectangle()
                             .foregroundColor(.MainColor)
@@ -37,6 +37,7 @@ struct TransferView: View {
                             Text("Transfer")
                                 .fontWeight(.heavy)
                                 .font(.system(size: 30))
+                                
                             
                             Spacer()
                             
@@ -59,12 +60,12 @@ struct TransferView: View {
                         
                 }
                 ScrollView {
-                    LazyVGrid(columns: columns, spacing: 20) {
+                    LazyVGrid(columns: columns, spacing: 25) {
                         ForEach(data, id: \.self) { i in
                             ZStack {
                                 RoundedRectangle(cornerRadius: 10)
                                     .foregroundColor(Color.white)
-                                    .frame(height: 300)
+                                    .frame(width: 350, height: 270)
                                     .shadow(radius: 2)
 
                                 Text(i)

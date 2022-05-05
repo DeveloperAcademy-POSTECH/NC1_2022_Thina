@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MatchView: View {
     
-    var matchTitle: [String] = ["Premier League", "LaLiga", "BUNDESLIGA", "SERIE A"]
+    public var matchTitle: [String] = ["Premier League", "LaLiga", "BUNDESLIGA", "SERIE A"]
     
     var body: some View {
         VStack(spacing: 30) {
@@ -20,20 +20,19 @@ struct MatchView: View {
             
             ScrollView {
                 
-                VStack(spacing: 20) {
-                    ZStack {
-                        Rectangle()
-                            .frame(height: 100)
-                            .foregroundColor(Color.gray)
-                        
-                    }
+                VStack(spacing: 15) {
+                    EventBannerView()
+                        .frame(height: 95)
+                    
                     HStack {
                         Text("Live")
                             .fontWeight(.bold)
-                            .font(.title2)
+                            .font(.title)
+                        
                         Spacer()
                     }
                     .padding()
+                    
                 }
   
                     MatchBannerView()

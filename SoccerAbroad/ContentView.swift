@@ -32,7 +32,7 @@ struct ContentView: View {
 
                 }
 
-            TransferView2()
+            LeagueView()
                 .tabItem {
                     Image("LeagueIcon").renderingMode(.template)
 

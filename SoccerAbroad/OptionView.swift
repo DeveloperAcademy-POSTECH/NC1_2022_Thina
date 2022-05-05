@@ -16,6 +16,7 @@ struct OptionView: View {
         
         let keys = optionLeague.map {$0.key}
         let values = optionLeague.map {$0.value}
+        
         VStack {
             HStack {
                 Text("League")

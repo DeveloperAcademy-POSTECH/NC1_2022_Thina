@@ -21,9 +21,7 @@ struct TransferView2: View {
         NavigationView {
             ScrollView {
                 ZStack {
-                    Rectangle()
-                        .foregroundColor(.BackgroundColor)
-                        .ignoresSafeArea()
+                    Color.BackgroundColor.ignoresSafeArea()
                     
                     LazyVGrid(columns: columns, spacing: 20) {
                         ForEach(data, id: \.self) { i in

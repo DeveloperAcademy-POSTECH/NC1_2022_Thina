@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EE0EEAA8282018CF009906BD /* MatchBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0EEAA7282018CF009906BD /* MatchBannerView.swift */; };
+		EE5AA39428219FB300F7668D /* PremierLeagueTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5AA39328219FB300F7668D /* PremierLeagueTable.swift */; };
+		EE5AA39628225D6500F7668D /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5AA39528225D6500F7668D /* Cell.swift */; };
 		EE7F6D99281A8CD3002273F5 /* SoccerAbroadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7F6D98281A8CD3002273F5 /* SoccerAbroadApp.swift */; };
 		EE7F6D9B281A8CD3002273F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7F6D9A281A8CD3002273F5 /* ContentView.swift */; };
 		EE7F6D9D281A8CD4002273F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7F6D9C281A8CD4002273F5 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 		EEA4BEA6281E5F5600A1035F /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA4BEA5281E5F5600A1035F /* Transfer.swift */; };
 		EEA4BEC6281FBC3000A1035F /* OptionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA4BEC5281FBC3000A1035F /* OptionButtonView.swift */; };
 		EEA4BEC8281FF89800A1035F /* MarketValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA4BEC7281FF89800A1035F /* MarketValueView.swift */; };
+		EECAEFBF282169BE00A01F16 /* LeagueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAEFBE282169BE00A01F16 /* LeagueView.swift */; };
+		EECAEFC328219A1400A01F16 /* PremierTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAEFC228219A1400A01F16 /* PremierTableView.swift */; };
 		EECEB840281B04BC006A25C6 /* TransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECEB83F281B04BC006A25C6 /* TransferView.swift */; };
 		EECEB842281B05C8006A25C6 /* EventBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECEB841281B05C8006A25C6 /* EventBannerView.swift */; };
 		EECEB846281B1295006A25C6 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECEB845281B1295006A25C6 /* OptionView.swift */; };
@@ -25,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		EE0EEAA7282018CF009906BD /* MatchBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchBannerView.swift; sourceTree = "<group>"; };
+		EE5AA39328219FB300F7668D /* PremierLeagueTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremierLeagueTable.swift; sourceTree = "<group>"; };
+		EE5AA39528225D6500F7668D /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		EE7F6D95281A8CD3002273F5 /* SoccerAbroad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerAbroad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7F6D98281A8CD3002273F5 /* SoccerAbroadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerAbroadApp.swift; sourceTree = "<group>"; };
 		EE7F6D9A281A8CD3002273F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +39,8 @@
 		EEA4BEA5281E5F5600A1035F /* Transfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transfer.swift; sourceTree = "<group>"; };
 		EEA4BEC5281FBC3000A1035F /* OptionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionButtonView.swift; sourceTree = "<group>"; };
 		EEA4BEC7281FF89800A1035F /* MarketValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketValueView.swift; sourceTree = "<group>"; };
+		EECAEFBE282169BE00A01F16 /* LeagueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueView.swift; sourceTree = "<group>"; };
+		EECAEFC228219A1400A01F16 /* PremierTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremierTableView.swift; sourceTree = "<group>"; };
 		EECEB83F281B04BC006A25C6 /* TransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferView.swift; sourceTree = "<group>"; };
 		EECEB841281B05C8006A25C6 /* EventBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBannerView.swift; sourceTree = "<group>"; };
 		EECEB845281B1295006A25C6 /* OptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
@@ -91,13 +99,16 @@
 		EE7F6DA8281ABF48002273F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EECEB841281B05C8006A25C6 /* EventBannerView.swift */,
 				EECEB84F281BC08D006A25C6 /* MatchView.swift */,
+				EECEB841281B05C8006A25C6 /* EventBannerView.swift */,
 				EE0EEAA7282018CF009906BD /* MatchBannerView.swift */,
+				EECAEFBE282169BE00A01F16 /* LeagueView.swift */,
+				EECAEFC228219A1400A01F16 /* PremierTableView.swift */,
+				EE5AA39528225D6500F7668D /* Cell.swift */,
 				EECEB83F281B04BC006A25C6 /* TransferView.swift */,
-				EEA4BEC5281FBC3000A1035F /* OptionButtonView.swift */,
 				EECEB851281BCAFA006A25C6 /* TrasferView2.swift */,
 				EECEB845281B1295006A25C6 /* OptionView.swift */,
+				EEA4BEC5281FBC3000A1035F /* OptionButtonView.swift */,
 				EEA4BEC7281FF89800A1035F /* MarketValueView.swift */,
 				EE7F6D9A281A8CD3002273F5 /* ContentView.swift */,
 			);
@@ -109,6 +120,7 @@
 			children = (
 				EECEB84D281BBB9C006A25C6 /* ColorSet.swift */,
 				EEA4BEA5281E5F5600A1035F /* Transfer.swift */,
+				EE5AA39328219FB300F7668D /* PremierLeagueTable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,14 +197,18 @@
 			files = (
 				EECEB842281B05C8006A25C6 /* EventBannerView.swift in Sources */,
 				EECEB840281B04BC006A25C6 /* TransferView.swift in Sources */,
+				EE5AA39428219FB300F7668D /* PremierLeagueTable.swift in Sources */,
 				EE7F6D9B281A8CD3002273F5 /* ContentView.swift in Sources */,
+				EE5AA39628225D6500F7668D /* Cell.swift in Sources */,
 				EECEB846281B1295006A25C6 /* OptionView.swift in Sources */,
 				EECEB850281BC08D006A25C6 /* MatchView.swift in Sources */,
+				EECAEFC328219A1400A01F16 /* PremierTableView.swift in Sources */,
 				EEA4BEC8281FF89800A1035F /* MarketValueView.swift in Sources */,
 				EEA4BEA6281E5F5600A1035F /* Transfer.swift in Sources */,
 				EECEB852281BCAFA006A25C6 /* TrasferView2.swift in Sources */,
 				EECEB84E281BBB9C006A25C6 /* ColorSet.swift in Sources */,
 				EE7F6D99281A8CD3002273F5 /* SoccerAbroadApp.swift in Sources */,
+				EECAEFBF282169BE00A01F16 /* LeagueView.swift in Sources */,
 				EE0EEAA8282018CF009906BD /* MatchBannerView.swift in Sources */,
 				EEA4BEC6281FBC3000A1035F /* OptionButtonView.swift in Sources */,
 			);

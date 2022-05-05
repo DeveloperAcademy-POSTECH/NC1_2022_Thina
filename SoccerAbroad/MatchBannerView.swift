@@ -24,7 +24,7 @@ struct MatchBannerView: View {
                     VStack {
                         HStack {
                             Text(LiveArray[i-1])
-                                .foregroundColor(.BackgroundColor)
+                                .foregroundColor(Color.white)
                                 .fontWeight(.bold)
                             
                             Spacer()
